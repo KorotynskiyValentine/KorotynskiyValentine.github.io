@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myrepos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2b3a67;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      opacity: 0.8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+    }
+
+    h2 {
+      color: #2b3a67;
+      border-left: 4px solid #2b3a67;
+      padding-left: 10px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .project {
+      background: #f0f2f8;
+      border-radius: 8px;
+      padding: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      background: #e8ebf7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2b3a67;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #2b3a67;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    Myrepos
+
+  <header>
+    <h1>Myrepos</h1>
+    <p>Веб-разработчик | Создание сайтов и интерфейсов</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Обо мне</h2>
+      <p>Привет!</p>
+    </section>
+
+    <section>
+      <h2>Проекты</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Сайт-портфолио</h3>
+          <p>Простой сайт с информацией обо мне и моих работах.</p>
+          <a href="#">Смотреть</a>
+        </div>
+        <div class="project">
+          <h3>Блог о технологиях</h3>
+          <p>Мини-блог с записями о веб-разработке и инструментах.</p>
+          <a href="#">Смотреть</a>
+        </div>
+        <div class="project">
+          <h3>Онлайн-резюме</h3>
+          <p>Интерактивная страница с опытом и навыками.</p>
+          <a href="#">Смотреть</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>📧 <a href="mailto:valentin@example.com">valentin@example.com</a></p>
+      <p>💼 <a href="https://github.com/valentinkorotynskiy" target="_blank">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025</p>
+  </footer>
+
 </body>
 </html>
